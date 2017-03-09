@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Document</title>
 </head>
 <body>
-	
+	<canvas id='micanvas'>
+		Tu navegador no soporta canvas
+	</canvas>
+	<script>
+		window.addEventListener('load', init);
+		function init(){
+			var canvas = document.getElementById('micanvas');
+			//console.log(canvas);
+			var ctx = canvas.getContext('2d');
+			console.log(ctx);
+			//(CordenadaX,CoordenadaY,Ancho,Alto)
+			ctx.fillRect(20,20,50,50);
+		}
+	</script>
 </body>
 </html>
