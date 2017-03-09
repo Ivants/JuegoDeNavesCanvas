@@ -13,12 +13,18 @@
 		window.addEventListener('load', init);
 		function init(){
 			var canvas = document.getElementById('micanvas');
-			//console.log(canvas);
 			var ctx = canvas.getContext('2d');
-			console.log(ctx);
 			//(CordenadaX,CoordenadaY,Ancho,Alto)
+			ctx.fillStyle = 'hsla(203,78%,70%,1)';
 			ctx.fillRect(20,20,50,50);
+
+			ctx.strokeStyle = 'hsla(150,68%,50%,1)';
+			ctx.strokeRect(200,20,50,50);
+
+			ctx.strokeStyle = 'rgb(0,0,200)';
+			ctx.strokeRect(200,80,50,50);
+			console.log(ctx);
 		}
-	</script>
+	</script>	
 </body>
 </html>
